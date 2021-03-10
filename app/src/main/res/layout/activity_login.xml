@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_title"
+        android:textColor="#3048A1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/LinearLayoutEmail1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutEmail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/LinearLayoutPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/editTextEmail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="@string/email"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLogin"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreateNewUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutPassword" />
+
+    <Button
+        android:id="@+id/buttonCreateNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCreateNewUser"
+        android:text="@string/create_new_user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/LinearLayoutEmail1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/LinearLayoutEmail1"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutEmail1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="password"
+            android:ems="10"
+            android:hint="@string/pass"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkSaveInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onSaveLoginInfo"
+        android:text="@string/save_login_message"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#878383"
+        app:layout_constraintEnd_toEndOf="@+id/LinearLayoutPassword"
+        app:layout_constraintStart_toStartOf="@+id/LinearLayoutPassword"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayoutPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

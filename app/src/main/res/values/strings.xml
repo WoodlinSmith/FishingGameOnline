@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Phishing</string>
+    <string name="dialog_HelpText">
+            This is a fishing game where you capture fish using various tools at your disposal.
+            Enter the name of the 2 players and the number of rounds in the boxes below.
+            \nPlayers get 1 turn each in every round where they can move
+            around the fisherman and then fish using one of the 3 tools.
+            The three choices of tools are - a round net, a rectangular net and a spear.
+            The round net can be moved around in a limited area and can capture the closest
+            fish from among the ones it overlaps. The rectangular net is flexible
+            and can be made bigger or smaller. Bigger the net, lesser the probability
+            of catching fish. The spear can be moved and rotated. It has a 100%% chance of capturing
+            every fish it hits. At the end of the game the player with the higher number of captures wins.\n</string>
+    <string name="close">Close</string>
+    <string name="game_title">Capture the Fish</string>
+    <string name="help_button_text">Help</string>
+    <string name="Confirm_Btn">Confirm</string>
+    <string name="Back_Btn">Back</string>
+    <string name="captureButton">Capture</string>
+    <string name="textViewRounds">"Round: "</string>
+    <string name="textViewPLayersTurn">" 's turn"</string>
+    <string name="Play_Again">Play Again</string>
+    <string name="placeholder">placeholder</string>
+    <string name="username">Username:</string>
+    <string name="user">User</string>
+    <string name="login">Login</string>
+    <string name="create_user">Create User</string>
+    <string name="create_new_user">Create New User</string>
+    <string name="return_button">Return</string>
+    <string name="successful_user_create_toast">New user was created successfully. Log in with your
+        new user information.</string>
+    <string name="password_confirm">Confirm Password:</string>
+    <string name="failed_login_toast">Login attempt failed. Try again or create new account.</string>
+    <string name="waiting">Waiting for second player to join…</string>
+    <string name="password">Password:</string>
+    <string name="pass">Pass</string>
+    <string name="passwords_dont_match_toast">Passwords do not match. New user failed to create.</string>
+    <string name="email">Email</string>
+    <string name="save_login_message">Save Login Info on this Device</string>
+    <string name="reset_database">Reset Database</string>
+    <string name="exit">Exit Game</string>
+    <string name="early_exit_message">The game was exited.</string>
+    <string name="gameState_fail">Failed to retrieve game state!</string>
+    <string name="secondPlayer_fail">Failed to find a player!</string>
+    <string name="your_turn_label">Your turn</string>
+    <string name="ask_for_rounds">How many rounds would you like to play?</string>
+</resources>
